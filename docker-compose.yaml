@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  php:
+    build:
+      context: dckr/build/php
+    ports:
+      - 80:80
+  py:
+    build:
+      context: dckr/build/py
+    command:
+      - python3
+      - svr.py
+    volumes:
+      - .:/opt/expt/grpc

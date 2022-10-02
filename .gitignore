@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+*_pb2.py
+*_pb2_grpc.py
+
+*.spec
+build/
+dist/
+
+vendor/
